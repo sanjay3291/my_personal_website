@@ -1,23 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- TODO: Modify title based on website name -->
-    <title>My website</title>
-    <link rel="stylesheet" href="main.css">
+  <!--TODO: Change title-->
+  <title>JaysanProjects</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <!-- TODO: Brainsorm a common body template for all pages -->
-    <h1>Task Timeline</h1>
-    <p id="date"></p>
-    <ul>
-        <li class="list">Edit the head</li>
-        <li class="list">Edit the body</li>
-        <li>Link to JavaScript</li>
-    </ul>
-    <!--TODO: remove JS from here and link it appropriately in the head-->
-    <script src="app.js"></script>
-    <noscript>You need to enable JavaScript to view the full site.</noscript>
+    <!--Navbar-->
+    <nav class="navbar">
+
+    <!-- Navbar brand -->
+    <!--TODO: Change link and the name-->
+    <a class="navbar-brand" href="index.html">JaysanProjects</a>
+  
+    <!-- Collapse button -->
+    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+      aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars fa"></i></span></button>
+  
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+  
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <!--TODO: Add links to the menu-->
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">IPL Playoff Pool</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">PID Hand Tracker</a>
+        </li>
+      </ul>
+      <!-- Links --> 
+    </div>
+    <!-- Collapsible content -->
+  </nav>
+  <!--/.Navbar-->
+
+    <div class="view" style="background-image: url(1305828451-floor-minimalistic-dark-pattern-wood-patterns-wallpaper.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-black-light align-items-center">
+          <!-- Content -->
+          <div class="container">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-md-12 mb-4 text-white text-center">
+                <h1 class="h1-reponsive text-white text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown"><strong><em>Intro</em></strong></h1>
+                <hr class="hr-light my-4 wow fadeInDown">
+                <h6 class="mb-4 text-white wow fadeInDown">I'm a Controls Engineer by trade and I spend some of my free time doing hobby projects. This website is to showcase some of my projects.</h6>
+                <h6 class="mb-4 text-white wow fadeInDown">Thanks for taking a look.</h6>
+                <!--TODO: Add links to the button-->
+                <a class="btn btn-outline-info wow fadeInDown" href="#projectsCardDeck" data-wow-delay="0.4s">Go to Projects</a>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Content -->
+        </div>
+        <!-- Mask & flexbox options-->
+      </div>
+
+      <div class="container">
+        <div class="row h-100 justify-content-md-center align-items-center top-buffer">
+            <div class="card-deck" id="projectsCardDeck">
+            <!--TODO: Add links to the card-->
+            <a class="cardLinks" href="http://google.com">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://resources.platform.iplt20.com/photo-resources/2020/08/06/432e08b4-caf5-4504-9c70-cb26973db7cf/IPL-2020_v1.jpg?width=626&height=626" alt="IPL Trophy Logo">
+                <div class="card-body">
+                  <h5 class="card-title">IPL Playoff Pool</h5>
+                  <p class="card-text">A competition to allow contestants to pick the playoff contenders in this years IPL season.</p>
+              </div>
+            </div>
+           </a>
+           <!--TODO: Add links to the card-->
+           <a class="cardLinks" href="http://google.com">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://image.freepik.com/free-vector/coming-soon-with-megaphone-design_1017-26689.jpg" alt="Coming soon">
+                <div class="card-body">
+                  <h5 class="card-title">PID Hand Tracker</h5>
+                  <p class="card-text">A control systems project to track objects with precision along a horizontal rail using a PID controller.</p>                  
+                </div>
+          </div>
+           </a>
+        </div>
+        </div>
+        </div>
+
+      <!-- Footer -->
+<footer class="page-footer font-small pt-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+  
+      <!-- Call to action -->
+      <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+          <h4 class="mb-1">-Sanjay</h4>
+        </li>
+      </ul>
+    </div>
+    <!-- Footer Elements -->
+  </footer>
+  <!-- Footer -->
+
+      
+      
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </body>
 </html>
