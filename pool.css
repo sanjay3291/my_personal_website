@@ -1,0 +1,30 @@
+.fa {
+    font-size: 1.5rem;
+    }
+  
+    .navbar{
+      background: black;
+    }
+  
+    .navbar-brand{
+      color: white;
+    }
+    .navbar-toggler{
+      color: white;
+    }
+  
+    .nav-link{
+      color: white;
+    }
+  
+    .navbar-toggler.toggler-example {
+    cursor: pointer;
+    }
+  
+    .page-footer{
+      background: black;
+    }
+    
+    .mb-1{
+      color: rgb(255, 255, 255);
+    }
