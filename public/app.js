@@ -23,7 +23,8 @@ var picksBCB = new Map([
 
 
 $(document).ready(function() {
-    let url = 'http://localhost:3000/pool.html';
+    //let url = 'http://localhost:3000/pool.html';
+    let url = 'https://jaysan.herokuapp.com/pool.html';
         let data = {
             endPoint: url
             }; 
