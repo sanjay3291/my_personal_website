@@ -23,14 +23,14 @@ var picksBCB = new Map([
 
 
 $(document).ready(function() {
-    let url = 'http://localhost:3000/';
+    let url = 'http://localhost:3000/pool.html';
         let data = {
             endPoint: url
             }; 
             try{
                 $.ajax({
                     url: url,
-                    method: 'GET',
+                    method: 'POST',
                     data: data,
                     dataType: 'json' 
                   }).done(function(response) {
@@ -181,7 +181,7 @@ function myFunction() {
         "data": {
         "labels": [sortable[0][0],sortable[1][0],sortable[2][0],sortable[3][0],sortable[4][0],sortable[5][0],sortable[6][0]],
         "datasets": [{
-        "label": "Points",
+        "label": "Current Leader is " + sortable[0][0],
         "data": [sortable[0][1],sortable[1][1],sortable[2][1],sortable[3][1],sortable[4][1],sortable[5][1],sortable[6][1]],
         "fill": false,
         "backgroundColor": randBackgroundColors,
@@ -280,7 +280,7 @@ function myFunction() {
         "data": {
         "labels": [sortable[0][0],sortable[1][0],sortable[2][0],sortable[3][0],sortable[4][0],sortable[5][0],sortable[6][0],sortable[7][0],sortable[8][0],sortable[9][0]],
         "datasets": [{
-        "label": "Points",
+        "label": "Current Leader is " + sortable[0][0],
         "data": [sortable[0][1],sortable[1][1],sortable[2][1],sortable[3][1],sortable[4][1],sortable[5][1],sortable[6][1],sortable[7][1],sortable[8][1],sortable[9][1]],
         "fill": false,
         "backgroundColor": randBackgroundColors,
@@ -300,4 +300,19 @@ function myFunction() {
         });
     
    };
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
 

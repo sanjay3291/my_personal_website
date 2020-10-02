@@ -82,3 +82,82 @@
     div.chart-container {
       padding: 1px;
     }
+
+    .collapsible {
+      background-color: rgb(196, 148, 77);
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+    
+    .active, .collapsible:hover {
+      background-color: #555;
+    }
+    
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+
+    .page-heading {
+      background-image: linear-gradient(265deg,#04143a,#19398a);
+      padding: 4.6rem 0;
+      position: relative;
+      z-index: 30;
+  }
+
+  .page-heading__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.page-heading__background-image {
+  bottom: -68rem;
+  left: -21.3rem;
+  position: absolute;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  width: 120rem;
+}
+
+.page-heading__content {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 10;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-style: italic;
+  padding: 0 1.5rem;
+}
+
+.page-heading__title {
+  font-weight: 900;
+  position: relative;
+  margin-right: auto;
+  font-size: 3.2rem;
+  color: #fff;
+  z-index: 2;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}

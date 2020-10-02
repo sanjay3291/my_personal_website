@@ -8,8 +8,9 @@ var app = express();
 var colObj = [];
 
 app.use(cors())
+app.use(express.static('public'));
 
-app.get('/', function (req, res) {
+app.post('/pool.html', function (req, res) {
   // allow access from other domains
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', '*');
@@ -39,8 +40,6 @@ app.get('/', function (req, res) {
         rowObj.NRR = table[0].children[i].children[6].children[0].data;
         colObj.push(rowObj);
     }
-    //console.log(colObj);
-    //return colObj;
 
   });
   
